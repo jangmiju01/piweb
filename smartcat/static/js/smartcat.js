@@ -4,7 +4,11 @@
 //   alert(formData);
 // });
 
+<<<<<<< HEAD
 function fBbs_Save_Add() {
+=======
+function fBbsWriteSave () {
+>>>>>>> 288bb65bfab73ba0ef01a4bfdc3983674477cfcd
   var formData = app.form.convertToData('#form-bbs-save');
 	console.log (formData);
 	if (formData.category == '') {
@@ -12,7 +16,11 @@ function fBbs_Save_Add() {
 	} else if (formData.word == '') {
 		app.dialog.alert ('단어를 입력하세요.', '입력오류');
 	} else {
+<<<<<<< HEAD
     app.request.post ('/bbs_save_Add', formData, function (data) {
+=======
+    app.request.post ('/bbs_insert', formData, function (data) {
+>>>>>>> 288bb65bfab73ba0ef01a4bfdc3983674477cfcd
       console.log(data);
       discoverView.router.back({force : true, ignoreCache : true, reload : true});
     });

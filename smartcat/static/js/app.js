@@ -21,6 +21,7 @@ var app = new Framework7({
       url: 'contents/cid_{{cid}}.html'
     },
     {
+<<<<<<< HEAD
       path: '/bbs/:page/:id',
       url: '/bbs/{{page}}}.html?id={{id}}',
       options:{
@@ -28,6 +29,8 @@ var app = new Framework7({
       }
     },
     {
+=======
+>>>>>>> 288bb65bfab73ba0ef01a4bfdc3983674477cfcd
       path: '/bbs/:page',
       url: 'bbs/{{page}}.html'
     },
